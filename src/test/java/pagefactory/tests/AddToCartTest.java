@@ -16,25 +16,27 @@ public class AddToCartTest extends BaseTest {
     public void checkAddToCart() {
         XmlToObject xmlToObject = new XmlToObject();
         TestData testData = xmlToObject.convert();
-        Logger logger = LogManager.getLogger("ASYNC_JSON_FILE_APPENDER");
-        Exception e = new Exception("This is only a test!");
+        Logger logger = LogManager.getLogger("devpinoyLogger");
         String newUrl = new PropertiesReader().getNewUrl();
 
         getHomePage().searchByKeyword(testData.getName());
         getProductListingPage().waitElementToBeClickable(30, getProductListingPage().getBrandCheckbox());
         getProductListingPage().clickCheckbox();
         getDriver().get(newUrl);
+        logger.debug("Changed default filters");
         getProductListingPage().waitElementToBeClickable(30, getProductListingPage().getAddToCartButton());
         getProductListingPage().clickAddToCartButton();
+        logger.debug("Added to cart");
         getProductListingPage().waitElementToBeClickable(30, getProductListingPage().getMiniCartButton());
         getProductListingPage().clickMiniCartButton();
+        logger.debug("Opened cart");
         getProductListingPage().closePopUp();
         getProductListingPage().waitElementToBeClickable(30, getProductListingPage().getMiniCartButton());
         getProductListingPage().clickMiniCartButton();
+        logger.debug("Checking sum");
         getCartPage().waitForAjaxToCompletePdp(30);
         assertFalse(Integer.getInteger(getCartPage().getPrice()) <= Integer.getInteger(testData.getSum()));
-        logger.error("This is a simple message at ERROR level. " +
-                "This is the minimum visible level.", e);
+
 
 
     }

@@ -25,10 +25,6 @@ public class PropertiesReader {
         return URL;
     }
 
-    public String getNewUrl(){
-        String NEW_URL = property.getProperty("NEW_URL");
-        return NEW_URL;
-    }
 
 
 

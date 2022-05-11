@@ -1,44 +1,35 @@
 package pagefactory.tests;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import pagefactory.pages.CartPage;
 import pagefactory.pages.HomePage;
 import pagefactory.pages.ProductListingPage;
-import util.PropertiesReader;
-
-import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
+import util.WebdriverSingleton;
 
 public class BaseTest {
-    private WebDriver driver;
-
-    String url = new PropertiesReader().getUrl();
+    public WebDriver getDriver(){return WebdriverSingleton.getInstance();
+    }
 
 
     @BeforeTest
     public void profileSetUp() {
-        chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
 
     }
 
     @BeforeMethod
     public void testsSetUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(url);
+        getDriver();
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
-    }
-
-    public WebDriver getDriver() {
-        return driver;
+        WebdriverSingleton.close();
     }
 
     public HomePage getHomePage() {

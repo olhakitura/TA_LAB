@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<filters>
+    <filter>
+        <name>чехол</name>
+        <filtersearch>по новизне</filtersearch>
+        <sum>5000</sum>
+    </filter>
+    <filter>
+        <name>стекло</name>
+        <filtersearch>по популярности</filtersearch>
+        <sum>2000</sum>
+    </filter>
+    <filter>
+        <name>iPhone</name>
+        <filtersearch>по цене</filtersearch>
+        <sum>100000</sum>
+    </filter>
+    <filter>
+        <name>стекло</name>
+        <filtersearch>по рейтингу</filtersearch>
+        <sum>6999</sum>
+    </filter>
+    <filter>
+        <name>зарядка</name>
+        <filtersearch>по цене</filtersearch>
+        <sum>7000</sum>
+    </filter>
+</filters>

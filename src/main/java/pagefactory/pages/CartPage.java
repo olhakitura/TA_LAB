@@ -9,11 +9,11 @@ public class CartPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath = "//div[@class='cart-receipt__sum-price']/span[1]")
-    private WebElement cartReceiptPrice;
+    @FindBy(xpath = "//span[@id='total']")
+    private WebElement cartTotal;
 
     public String getPrice(){
-        return cartReceiptPrice.getText();
+        return cartTotal.getText();
     }
 
 }

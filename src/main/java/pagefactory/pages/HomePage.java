@@ -11,13 +11,26 @@ public class HomePage extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath = "//input[@name ='search']")
+    @FindBy(xpath="//div[@class='customer-button search-icon js-search-open']" )
+    private WebElement searchButton;
+
+    @FindBy(xpath = "//input[@class='input_search']")
     private WebElement searchInput;
 
+    public HomePage() {
 
+    }
 
     public void searchByKeyword(final String keyword) {
         searchInput.sendKeys(keyword + Keys.ENTER);
 
+    }
+
+    public WebElement getSearchButton(){
+        return searchButton;
+    }
+
+    public void clickSearchButton(){
+        searchButton.click();
     }
 }

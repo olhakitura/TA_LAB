@@ -11,7 +11,7 @@ public class HomePage extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath="//div[@class='customer-button search-icon js-search-open']" )
+    @FindBy(xpath="//input[@class='button_search search-icon']" )
     private WebElement searchButton;
 
     @FindBy(xpath = "//input[@class='input_search']")

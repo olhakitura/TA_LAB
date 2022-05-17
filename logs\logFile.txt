@@ -2,3 +2,13 @@
 2022-05-11 11:25:32 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
 2022-05-11 11:30:48 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
 2022-05-11 11:30:48 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
+2022-05-11 11:44:48 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-11 11:44:49 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
+2022-05-11 11:53:26 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-11 11:53:26 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
+2022-05-11 11:54:10 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-11 11:54:10 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
+2022-05-11 11:54:45 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-11 11:54:45 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver
+2022-05-11 11:58:37 INFO  main WebDriverManager:resolveDriverVersion:966 - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-11 11:58:37 INFO  main WebDriverManager:exportDriver:1021 - Exporting webdriver.chrome.driver as /Users/macbookpro/.cache/selenium/chromedriver/mac64/101.0.4951.41/chromedriver

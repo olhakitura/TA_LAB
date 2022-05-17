@@ -42,7 +42,6 @@ public class AddToCartTest extends BaseTest {
         PropertyConfigurator.configure("src/main/resources/log4j.properties");
 
         getHomePage().waitForPageLoadComplete(WAITING_TIME );
-        getHomePage().waitElementToBeClickable(WAITING_TIME , getHomePage().getSearchButton());
         new Search().searchByKeyword(filter.getName());
         logger.info("The search word is entered.");
         getProductListingPage().waitForPageLoadComplete(WAITING_TIME );
